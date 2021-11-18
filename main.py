@@ -4,7 +4,7 @@ from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
-from colorama import Back, Style 
+#from colorama import Back, Style 
 
 #Opening Page
 Builder.load_string("""
