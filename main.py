@@ -198,7 +198,7 @@ class PEMDAS(Screen):
             #Parentheses
             a = entry
             a = a.strip()
-            a = a.replace(" ","")
+            a = a.replace(" ","").replace("÷","/")
             print(a)
             print()
             print("------------------------------")
