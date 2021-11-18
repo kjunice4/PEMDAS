@@ -595,7 +595,8 @@ class PEMDAS(Screen):
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print()
             print("Answer:                     ",a)
-            self.ids.list_of_steps.add_widget(Label(text="Final Answer : " + a, font_size = 60, size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text="Final Answer : ", font_size = 60, size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= a, font_size = 60, size_hint_y= None, height=100))
 
 
         except Exception:
