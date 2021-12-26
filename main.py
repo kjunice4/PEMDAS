@@ -126,7 +126,7 @@ Builder.load_string("""
                     on_release:
                         app.root.current = "Menu"
                         root.manager.transition.direction = "right" 
-                        
+                
                 Button:
                     id: steps
                     text: "Clear All"   
@@ -198,7 +198,7 @@ class PEMDAS(Screen):
             #Parentheses
             a = entry
             a = a.strip()
-            a = a.replace(" ","").replace("÷","/")
+            a = a.replace(" ","").replace("÷","/").replace("×","*")
             print(a)
             print()
             print("------------------------------")
@@ -212,7 +212,6 @@ class PEMDAS(Screen):
             a = a.replace("*"," * ")
             a = a.replace("/"," / ")
             a = a.replace(" ^ - ","^-")
-            
             
             print("Expression Entered :      ",a)
             print()
@@ -613,7 +612,6 @@ class Homepage(Screen):
 
 class Menu(Screen):
     pass
-
 
 sm = ScreenManager()
 sm.add_widget(Homepage(name="Homepage"))
