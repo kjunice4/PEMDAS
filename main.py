@@ -299,6 +299,15 @@ class PEMDAS(Screen):
             a = a.replace("*"," * ")
             a = a.replace("/"," / ")
             a = a.replace(" ^ - ","^-")
+            a = a.replace("**(","^(")
+            a = a.replace("*(","(")
+            a = a.replace("(","*(")
+            a = a.replace("^*","^")
+            
+            if a[0] == "*":
+                a = a[1:]
+                print("a =",a)
+            
             
             print("Expression Entered :      ",a)
             print()
@@ -356,6 +365,14 @@ class PEMDAS(Screen):
             a = a.replace("*"," * ")
             a = a.replace("/"," / ")
             a = a.replace(" ^ - ","^-")
+            a = a.replace("**(","^(")
+            a = a.replace("*(","(")
+            a = a.replace("(","*(")
+            a = a.replace("^*","^")
+            
+            if a[0] == "*":
+                a = a[1:]
+                print("a =",a)
 
             
             #String Method to look for Exponents
@@ -423,6 +440,14 @@ class PEMDAS(Screen):
                     a = a.replace("*"," * ")
                     a = a.replace("/"," / ")
                     a = a.replace(" ^ - ","^-")
+                    a = a.replace("**(","^(")
+                    a = a.replace("*(","(")
+                    a = a.replace("(","*(")
+                    a = a.replace("^*","^")
+                    
+                    if a[0] == "*":
+                        a = a[1:]
+                        print("a =",a)
 
                 i = i + 1
             
@@ -487,6 +512,14 @@ class PEMDAS(Screen):
                     a = a.replace("*"," * ")
                     a = a.replace("/"," / ")
                     a = a.replace(" ^ - ","^-")
+                    a = a.replace("**(","^(")
+                    a = a.replace("*(","(")
+                    a = a.replace("(","*(")
+                    a = a.replace("^*","^")
+                    
+                    if a[0] == "*":
+                        a = a[1:]
+                        print("a =",a)
    
                 i = i + 1
             
@@ -551,6 +584,14 @@ class PEMDAS(Screen):
                     a = a.replace("*"," * ")
                     a = a.replace("/"," / ")
                     a = a.replace(" ^ - ","^-")
+                    a = a.replace("**(","^(")
+                    a = a.replace("*(","(")
+                    a = a.replace("(","*(")
+                    a = a.replace("^*","^")
+                    
+                    if a[0] == "*":
+                        a = a[1:]
+                        print("a =",a)
 
                 i = i + 1
             
@@ -610,6 +651,14 @@ class PEMDAS(Screen):
                     a = a.replace("*"," * ")
                     a = a.replace("/"," / ")
                     a = a.replace(" ^ - ","^-")
+                    a = a.replace("**(","^(")
+                    a = a.replace("*(","(")
+                    a = a.replace("(","*(")
+                    a = a.replace("^*","^")
+                    
+                    if a[0] == "*":
+                        a = a[1:]
+                        print("a =",a)
 
                 i = i + 1
             
@@ -669,6 +718,14 @@ class PEMDAS(Screen):
                     a = a.replace("*"," * ")
                     a = a.replace("/"," / ")
                     a = a.replace(" ^ - ","^-")
+                    a = a.replace("**(","^(")
+                    a = a.replace("*(","(")
+                    a = a.replace("(","*(")
+                    a = a.replace("^*","^")
+                    
+                    if a[0] == "*":
+                        a = a[1:]
+                        print("a =",a)
 
                 i = i + 1
             a = a.replace(" ","")
