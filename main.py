@@ -22,11 +22,11 @@ Builder.load_string("""
                 root.manager.transition.direction = "left" 
                 
         Button:
-            font_size: 50
+            font_size: 40
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
-            height: 200
-            text: "KSquared-math,LLC ©"
+            height: 100
+            text: "KSquared-math,LLC © : PEMDAS Calculator"
             on_release:
                 app.root.current = "Menu"
                 root.manager.transition.direction = "left" 
@@ -35,11 +35,12 @@ Builder.load_string("""
             font_size: 50
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
-            height: 200
-            text: "PEMDAS Calculator"
+            height: 100
+            text: "Tap to continue"
             on_release:
                 app.root.current = "Menu"
                 root.manager.transition.direction = "left" 
+
 
 """)
 
