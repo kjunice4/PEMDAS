@@ -170,6 +170,7 @@ Builder.load_string("""
             
 """)
 
+#PEMDAS
 Builder.load_string("""
 <PEMDAS>
     id:PEMDAS
@@ -263,17 +264,6 @@ class PEMDAS(Screen):
 
     def __init__(self, **kwargs):
         super(PEMDAS, self).__init__(**kwargs)
-        Window.bind(on_keyboard=self._key_handler)
-
-    def _key_handler(self, instance, key, *args):
-        if key == 27:
-            self.set_previous_screen()
-            return True
-
-    def set_previous_screen(self):
-        if sm.current != "Homepage":
-            sm.transition.direction = 'right'
-            sm.current = "Menu"
             
     layouts = []
     def steps(self,entry):
@@ -805,11 +795,21 @@ sm.add_widget(PEMDAS(name="PEMDAS"))
 sm.add_widget(updates(name="updates"))
 sm.current = "Homepage"   
 
-class Math(App):
+class PEMDAS(App):
+    def __init__(self, **kwargs):
+        super(PEMDAS, self).__init__(**kwargs)
+        Window.bind(on_keyboard=self._key_handler)
+    
+    def _key_handler(self, instance, key, *args):
+        print("key:",key)
+        if key == 27:
+            sm.current = sm.current
+            return True
+    
     def build(app):
         return sm
 
 if __name__ == '__main__':
-    Math().run()
+    PEMDAS().run()
     
 
