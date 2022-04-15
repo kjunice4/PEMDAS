@@ -36,7 +36,7 @@ Builder.load_string("""
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
             height: 200
-            text: "KSquared-math,LLC © : PEMDAS Calculator"
+            text: "KSquared-Mathematics : PEMDAS Calculator"
             on_release:
                 app.root.current = "Menu"
                 root.manager.transition.direction = "left" 
@@ -86,10 +86,11 @@ Builder.load_string("""
                 font_size: 75
                 size_hint_y: None
                 height: 200
-                text: "Visit KSquared"
+                padding: 10, 10
+                text: "Visit KSquared-Mathematics"
                 on_release:
                     import webbrowser
-                    webbrowser.open('https://kevinjunice.wixsite.com/ksquaredllc')
+                    webbrowser.open('https://www.ksquaredmathematics.com/subscribe') 
             
             Button:
                 font_size: 75
@@ -107,10 +108,10 @@ Builder.load_string("""
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
-                text: "Share KSquared-math,LLC ©"
+                text: "Share KSquared-Mathematics"
                     
             Image:
-                source: 'KSquared_QR_code.png'
+                source: 'KSquared_QR.png'
                 size_hint_y: None
                 height: 1000
                 width: 1000
@@ -140,7 +141,7 @@ Builder.load_string("""
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
-                text: "What's new at KSquared-math?"
+                text: "What's new at KSquared-Mathematics?"
             
             Button:
                 id: steps
@@ -812,3 +813,4 @@ class PEMDAS(App):
 if __name__ == '__main__':
     PEMDAS().run()
     
+
